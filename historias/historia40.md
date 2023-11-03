@@ -24,3 +24,16 @@ Para: poder realizarlo posteriormente y ver esa lista de ejercicios de mi rutina
 #### Descripción de la interfaz de usuario
 
 Esta interfaz permitirá al usuario agregar un ejercicio a su rutina de entrenamiento. El usuario podrá ver una lista de ejercicios de su rutina de entrenamiento y podrá eliminar un ejercicio de su rutina de entrenamiento si es que así lo desea.
+
+### Lo que devuleve la API
+
+- Si se quiere añadir ejercicios a la lista se manda la solicitud del id que tiene el ejercicio y para eso es el siguiente post dentro de la lista:
+    
+    ```
+    POST http://localhost:8080/api/v1/users/1/rutinas/1/ejercicios
+    Content-Type: application/json
+    Accept: application/json
+    {
+    "ejercicioId": 14
+    }
+    ```
