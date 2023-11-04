@@ -6,32 +6,32 @@ Para: poder saber si estoy en un peso saludable o no.
 
 ## Criterios de aceptación
 
-- El usuario debe poder ver su indice de masa corporal.
+- El usuario debe poder ver su indice de masa corporal, peso, altura, estado y tip en base a su indice de masa corporal.
 - El usuario debe poder agregar su peso y altura.
 
 ## Análisis y diseño
 
 <img src="../assets/historia50.png" alt="Historia de usuario de poder ver tu IMC" width="500px" ><br/>
 
-- El usuario debe poder ver su indice de masa corporal porque es una funcionalidad básica de la aplicación.
+- El usuario debe poder ver su indice de masa corporal, peso, altura, estado y tip en base a su indice de masa corporal porque es una funcionalidad básica de la aplicación.
 - El usuario debe poder agregar su peso y altura porque es una funcionalidad básica de la aplicación.
 
 #### Descripción de la interfaz de usuario
 
-Esta interfaz permitirá al usuario ver su indice de masa corporal. El usuario podrá agregar su peso y altura para poder calcular su indice de masa corporal.
+Esta interfaz permitirá al usuario ver su indice de masa corporal, peso, altura, estado y tip en base a su indice de masa corporal. El usuario podrá agregar su peso y altura. El indice de masa corporal se calcula en base a la altura y peso del usuario.
 
 ### Lo que devuleve la API
 
-- Al momento de ver su indice de masa corporal, la API devolverá el peso, altura, indice de masa corporal y el estado en el que se encuentra el usuario.
+- Al momento de ver su indice de masa corporal, la API devolverá el peso, altura, indice de masa corporal, el tip y el estado en el que se encuentra el usuario. Los tips serán ya almacenados en una tabla en la base de datos y se mostrarán en base a su estado.
 
     ```
-    GET http://localhost:8080/api/v1/users/1/imc 
+    GET http://localhost:8080/api/v1/users/1/imc
     {
-    "id": 1,
-    "peso": 56,
-    "altura": 1.56,
-    "estado": "ideal",
-    "imc": 20.00
+        "peso": "56",
+        "altura": "1.65",
+        "imc": "20.57",
+        "tip": "Para mantener un peso saludable, equilibra las calorías que consumes con las que quemas (usa la calculadora de calorías para saber cuántas calorías debes consumir al día), aumenta tu consumo de frutas y verduras, y limita el consumo de alimentos procesados y bebidas azucaradas.",
+        "estado": "ideal"
     }
     ```
 

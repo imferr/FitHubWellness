@@ -9,5 +9,5 @@
 40. [Historia de usuario de agregar ejercicio a rutina](/historias/historia40.md)
 45. [Historia de usuario de agregar ejercicio a una nueva rutina](/historias/historia45.md)
 50. [Historia de usuario de poder ver tu IMC](/historias/historia50.md)
+55. [Historia de usuario de poder ver tips en base a tu IMC](/historias/historia55.md)
 60. [Historia de usuario de poder ver tu historial de IMC](/historias/historia60.md)
-70. 
