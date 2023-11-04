@@ -1,4 +1,4 @@
-# Historia de usuario de agregar y ver rutina
+# Historia de usuario de crear y ver rutina
 
 Yo: como usuario de la aplicación,
 Quiero: poder agregar una rutina de entrenamiento,
@@ -11,7 +11,7 @@ Para: poder realizarla posteriormente y ver esa lista de rutinas.
 
 ## Análisis y diseño
 
-<img src="../assets/historia30.png" alt="Historia de usuario de agregar y ver rutina" width="500px" ><br/>
+<img src="../assets/historia30.png" alt="Historia de usuario de crear y ver rutina" width="500px" ><br/>
 
 - El usuario debe poder crear una lista de rutinas nueva porque es una funcionalidad básica de la aplicación.
 - El usuario debe poder ver una lista de rutinas de entrenamiento porque es una funcionalidad básica de la aplicación.
@@ -79,5 +79,6 @@ Esta interfaz permitirá al usuario crear una lista de rutinas nueva. Al mismo t
     Accept: application/json
     {
         "nombreRutina": "Rutina de Fuerza"
+        "descripcion": "Con una barra sobre tus hombros, baja tu cuerpo hasta que tus muslos estén paralelos al suelo y luego regresa a la posición inicial."
     }
     ```

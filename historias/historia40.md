@@ -15,17 +15,15 @@ Para: poder realizarlo posteriormente y ver esa lista de ejercicios de mi rutina
 <img src="../assets/historia41.png" alt="Historia de usuario de agregar ejercicio a rutina" width="500px" ><br/>
 
 - El usuario debe poder agregar un ejercicio a su rutina de entrenamiento porque es una funcionalidad básica de la aplicación.
-- El usuario debe poder crear una lista de rutinas nueva porque es una funcionalidad básica de la aplicación.
-- El usuario debe poder ver una lista de ejercicios de su rutina de entrenamiento porque es una funcionalidad básica de la aplicación.
 - El usuario debe poder eliminar un ejercicio de su rutina de entrenamiento porque es una funcionalidad básica de la aplicación.
 
 #### Descripción de la interfaz de usuario
 
-Esta interfaz permitirá al usuario agregar un ejercicio a su rutina de entrenamiento. El usuario podrá ver una lista de ejercicios de su rutina de entrenamiento y podrá eliminar un ejercicio de su rutina de entrenamiento si es que así lo desea.
+Esta interfaz permitirá al usuario agregar un ejercicio a su rutina de entrenamiento. Al mismo tiempo, el usuario podrá eliminar un ejercicio de su rutina de entrenamiento.
 
 ### Lo que devuleve la API
 
-- Si se quiere añadir ejercicios a la lista se manda la solicitud del id que tiene el ejercicio y para eso es el siguiente post dentro de la lista:
+- Al momento de agregar un ejercicio a la lista de ejercicios de la rutina se manda la solicitud del id que tiene el ejercicio y para eso es el siguiente post dentro de la lista:
     
     ```
     POST http://localhost:8080/api/v1/users/1/rutinas/1/ejercicios
@@ -36,7 +34,7 @@ Esta interfaz permitirá al usuario agregar un ejercicio a su rutina de entrenam
     }
     ```
 
-- Si se quiere eliminar un ejercicio de la lista se manda la solicitud del id que tiene el ejercicio y para eso es el siguiente delete dentro de la lista:
+- Al momento de eliminar un ejercicio de la lista de ejercicios de la rutina se manda la solicitud del id que tiene el ejercicio y para eso es el siguiente delete dentro de la lista:
 
     ```
     DELETE http://localhost:8080/api/v1/users/1/rutinas/1/ejercicios/14
