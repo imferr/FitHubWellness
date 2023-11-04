@@ -11,3 +11,4 @@
 50. [Historia de usuario de poder ver tu IMC](/historias/historia50.md)
 55. [Historia de usuario de poder ver tips en base a tu IMC](/historias/historia55.md)
 60. [Historia de usuario de poder ver tu historial de IMC](/historias/historia60.md)
+70. [Historia de usuario de poder ver tus datos personales](/historias/historia70.md)
