@@ -70,3 +70,14 @@ Esta interfaz permitirá al usuario crear una lista de rutinas nueva. Al mismo t
     ]
     }
     ```
+
+- Si se quiere crear una lista de rutinas nueva se manda la solicitud del nombre de la rutina y para eso es el siguiente post:
+
+    ```
+    POST http://localhost:8080/api/v1/users/1/rutinas
+    Content-Type: application/json
+    Accept: application/json
+    {
+        "nombreRutina": "Rutina de Fuerza"
+    }
+    ```

@@ -7,8 +7,6 @@ Para: poder realizarlo posteriormente y ver esa lista de ejercicios de mi rutina
 ## Criterios de aceptación
 
 - El usuario debe poder agregar un ejercicio a su rutina de entrenamiento.
-- El usuario debe poder crear una lista de rutinas nueva.
-- El usuario debe poder ver una lista de ejercicios de su rutina de entrenamiento.
 - El usuario debe poder eliminar un ejercicio de su rutina de entrenamiento.
 
 ## Análisis y diseño
@@ -34,6 +32,17 @@ Esta interfaz permitirá al usuario agregar un ejercicio a su rutina de entrenam
     Content-Type: application/json
     Accept: application/json
     {
-    "ejercicioId": 14
+        "ejercicioId": 14
+    }
+    ```
+
+- Si se quiere eliminar un ejercicio de la lista se manda la solicitud del id que tiene el ejercicio y para eso es el siguiente delete dentro de la lista:
+
+    ```
+    DELETE http://localhost:8080/api/v1/users/1/rutinas/1/ejercicios/14
+    Content-Type: application/json
+    Accept: application/json
+    {
+        "ejercicioId": 14
     }
     ```
