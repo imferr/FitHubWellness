@@ -16,8 +16,8 @@ Para: poder seleccionar una rutina y ver los ejercicios que hay dentro de ella.
 
 ## Análisis y diseño
 
-<img src="../assets/historia30.png" alt="Historia de usuario de ver rutina y ejercicios por rutina" width="500px" ><br/>
 <img src="../assets/historia35.png" alt="Historia de usuario de ver rutina y ejercicios por rutina" width="500px" ><br/>
+<img src="../assets/historia30.png" alt="Historia de usuario de ver rutina y ejercicios por rutina" width="500px" ><br/>
 
 - El usuario debe poder ver una lista de rutinas de entrenamiento y los ejercicios que hay dentro de cada rutina porque es una funcionalidad básica de la aplicación.
 

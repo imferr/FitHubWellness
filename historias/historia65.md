@@ -17,12 +17,13 @@ Para: poder saber registrar un nuevo IMC.
 ## Análisis y diseño
 
 <img src="../assets/historia50.png" alt="Historia de usuario de poder agregar nuevo peso y altura" width="500px" ><br/>
+<img src="../assets/historia65.png" alt="Historia de usuario de poder agregar nuevo peso y altura" width="500px" ><br/>
 
 - El usuario debe poder agregar su peso y altura porque es una funcionalidad básica de la aplicación.
 
 #### Descripción de la interfaz de usuario
 
-Esta interfaz permitirá al usuario agregar su peso y altura. El usuario podrá agregar su peso y altura. En la parte derecha de la interfaz se encuentra un botón 'nuevo' que permitirá al usuario agregar su peso y altura.
+Esta interfaz permitirá al usuario agregar su peso y altura. El usuario podrá agregar su peso y altura. En la parte derecha de la interfaz se encuentra un botón 'nuevo' que permitirá al usuario agregar su peso y altura. En la segunda fotografia se muestra como los campos se habilitan al presionar el botón 'nuevo'.
 
 ### Lo que devuleve la API
 
