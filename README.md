@@ -1,5 +1,8 @@
 # Analisis y dieseño de software
 
+## Valor
+
+El valor de este proyecto es que los usuarios puedan tener una aplicación que les permita tener una rutina de ejercicio personalizada y que les permita ver su progreso en base a su IMC.
 
 ## Historias de usuario
 
