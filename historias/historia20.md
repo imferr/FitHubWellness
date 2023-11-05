@@ -16,7 +16,7 @@ Para: poder posteriormente seleccionar los ejercicios que deseo realizar.
 
 ## Análisis y diseño
 
-<img src="../assets/historia20.png" alt="Historia de usuario de ver partes del cuerpo para entrenar y ver lista de ejercicios para cada parte del cuerpo" width="500px" ><br/>
+<img src="../assets/historia20.png" alt="Historia de usuario de ver partes del cuerpo para entrenar" width="500px" ><br/>
 
 - El usuario debe poder ver una lista de que partes del cuerpo puede entrenar porque es una funcionalidad básica de la aplicación.
 
