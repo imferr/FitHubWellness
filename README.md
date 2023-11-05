@@ -7,7 +7,8 @@ El valor de este proyecto es que los usuarios puedan tener una aplicación que l
 ## Historias de usuario
 
 10. [Historia de usuario de inicio de sesión](/historias/historia10.md)
-20. [Historia de usuario de ver partes del cuerpo para entrenar y ver lista de ejercicios para cada parte del cuerpo](/historias/historia20.md)
+20. [Historia de usuario de ver partes del cuerpo para entrenar](/historias/historia20.md)
+25. [Historia de usuario de ver ejercicios para cada parte del cuerpo](/historias/historia25.md)
 30. [Historia de usuario de crear y ver rutina](/historias/historia30.md)
 40. [Historia de usuario de agregar ejercicio a rutina](/historias/historia40.md)
 45. [Historia de usuario de agregar ejercicio a una nueva rutina](/historias/historia45.md)
