@@ -9,6 +9,12 @@ Para: poder seleccionar los ejercicios que deseo realizar y crear una lista de r
 - El usuario debe poder ver una lista de que partes del cuerpo puede entrenar.
 - El usario debe poder ver una lista de ejercicios que puede realizar, dependiendo de la parte del cuerpo que desee entrenar.
 
+#### Prototipo de baja fidelidad
+
+- Dado: Que el usuario inicio sesión y se encuentra en la página de inicio de la aplicación.
+- Cuando: El usuario seleccione una parte del cuerpo que desea entrenar.
+- Entonces: El usuario podrá ver una lista de ejercicios que puede realizar, dependiendo de la parte del cuerpo que desee entrenar.
+
 ## Análisis y diseño
 
 <img src="../assets/historia20.png" alt="Historia de usuario de ver partes del cuerpo para entrenar y ver lista de ejercicios para cada parte del cuerpo" width="500px" ><br/>
@@ -22,27 +28,55 @@ Esta interfaz permitirá al usuario ver una lista de las partes del cuerpo que p
 
 ### Lo que devuleve la API
 
+#### Obtener lista de partes del cuerpo
+
 - En la pantalla principal de la aplicación se devuelve un get del api externo donde se muestra todos los ejercicios que hay:
 
-    ```
-    GET https://wger.de/api/v2/exercisecategory/
-    [
+    Request:
+
+        ```
+        GET https://wger.de/api/v2/exercisecategory/
+        Accept: application/json
+        ```
+
+    Response: Exitoso statusCode: 200
+    
+        ```
+        [
+            {
+                "id": 1,
+                "name": "Biceps"
+            },
+            {
+                "id": 2,
+                "name": "Pecho"
+            },
+            ... y así sucesivamente
+        ]
+        ```
+    
+    Response: Error statusCode: 400
+    
+        ```
         {
-            "id": 1,
-            "name": "Biceps"
-        },
-        {
-            "id": 2,
-            "name": "Pecho"
-        },
-        ... y así sucesivamente
-    ]
-    ```
+            "detail": "No se pudo obtener la lista de ejercicios"
+        }
+        ```
+
+#### Obtener lista de ejercicios por parte del cuerpo
 
 - Al momento de seleccionar una de las categorías que vamos a entrenar obtendremos la lista de los ejercicios que hay en esa categoría:
 
+    Request:
+
+        ```
+        GET https://wger.de/api/v2/exercise/?language=2&category=[ID_CATEGORIA]
+        Accept: application/json
+        ```
+
+    Response: Exitoso statusCode: 200
+
     ```
-    GET https://wger.de/api/v2/exercise/?language=2&category=[ID_CATEGORIA]
     {
         "count": 3
         "results": [
@@ -65,5 +99,13 @@ Esta interfaz permitirá al usuario ver una lista de las partes del cuerpo que p
                 "category": [ID_CATEGORIA],
             }
         ]
+    }
+    ```
+
+    Response: Error statusCode: 400
+
+    ```
+    {
+        "detail": "No se pudo obtener la lista de ejercicios"
     }
     ```
