@@ -57,15 +57,15 @@ Esta interfaz permitirá al usuario ver una lista de rutinas de entrenamiento. T
         ]
         ```
 
-    Response: Error statusCode: 400
-    
-        ```
-        {
-            "detail": "No se pudo obtener la lista de rutinas"
-        }
-        ```
+    Response: Error statusCode: 404
 
     ```
+    {
+        "status": 404,
+        "error": "Bad Request",
+        "detail": "No se pudo obtener la lista de rutinas"
+        "path": "/api/v1/users/1/rutinas
+    }
 
 #### Obtener ejercicios de una rutina
 
@@ -104,10 +104,13 @@ Esta interfaz permitirá al usuario ver una lista de rutinas de entrenamiento. T
         }
         ```
 
-    Response: Error statusCode: 400
+    Response: Error statusCode: 404
     
         ```
         {
-            "detail": "No se pudo obtener la lista de ejercicios"
+            "status": 404,
+            "error": "Bad Request",
+            "detail": "No se pudo obtener la lista de ejercicios de la rutina"
+            "path": "/api/v1/users/1/rutinas/1
         }
         ```

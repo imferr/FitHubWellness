@@ -53,10 +53,13 @@ Esta interfaz permitirá al usuario ver una lista de las partes del cuerpo que p
         ]
         ```
     
-    Response: Error statusCode: 400
+    Response: Error statusCode: 404
     
         ```
         {
-            "detail": "No se pudo obtener la lista de ejercicios"
+            "status": 404,
+            "error": "Bad Request",
+            "message": "No se encontró la lista de ejercicios",
+            "path": "/api/v2/exercisecategory"
         }
         ```

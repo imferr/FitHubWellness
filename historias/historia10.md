@@ -9,6 +9,21 @@ Para: poder acceder a las funcionalidades de la aplicación.
 - El usuario debe poder iniciar sesión con una cuenta de Google existente.
 - El usuario debe poder cerrar sesión.
 
+#### Prototipo de baja fidelidad
+
+##### Inicio de sesión
+
+- Dado: Que el usuario no inicio sesión.
+- Cuando: El usuario seleccione la opción de iniciar sesión.
+- Entonces: El usuario podrá iniciar sesión con una cuenta de Google existente.
+
+##### Cerrar sesión
+
+- Dado: Que el usuario inicio sesión.
+- Cuando: El usuario seleccione la opción de cerrar sesión.
+- Entonces: El usuario podrá cerrar sesión.
+
+
 ## Análisis y diseño
 
 <img src="../assets/historia10.png" alt="Historia de usuario de inicio de sesión" width="500px" ><br/>

@@ -8,6 +8,12 @@ Para: poder saber que ejercicios me convienen más o que debo de hacer para mejo
 
 - El usuario debe poder ver tips en base a su indice de masa corporal o estado.
 
+#### Prototipo de baja fidelidad
+
+- Dado: Que el usuario inicio sesión.
+- Cuando: El usuario seleccione la opción de IMC.
+- Entonces: El usuario podrá ver tips en base a su indice de masa corporal o estado.
+
 ## Análisis y diseño
 
 <img src="../assets/historia50.png" alt="Historia de usuario de poder ver tips en base a tu IMC" width="500px" ><br/>
@@ -20,12 +26,33 @@ Esta interfaz permitirá al usuario ver tips en base a su indice de masa corpora
 
 ### Lo que devuleve la API
 
+#### Ver tips en base a tu IMC
+
 - Al momento de ver los tips en base a su indice de masa corporal o estado, la API devolverá una lista de tips en base a su estado.
 
-    ```
-    GET http://localhost:8080/api/v1/users/1/tips/1
-    {
-        "tip": "Para mantener un peso saludable, equilibra las calorías que consumes con las que quemas (usa la calculadora de calorías para saber cuántas calorías debes consumir al día), aumenta tu consumo de frutas y verduras, y limita el consumo de alimentos procesados y bebidas azucaradas."
-        "estado": "ideal"
-    }
-    ```
+    Request:
+    
+        ```
+        GET http://localhost:8080/api/v1/users/1/tips
+        Accept: application/json
+        ```
+
+    Response: Exitoso statusCode: 200
+    
+        ```
+        {
+            "tip": "Para mantener un peso saludable, equilibra las calorías que consumes con las que quemas (usa la calculadora de calorías para saber cuántas calorías debes consumir al día), aumenta tu consumo de frutas y verduras, y limita el consumo de alimentos procesados y bebidas azucaradas."
+            "estado": "ideal"
+        }
+        ```
+    
+    Response: Error statusCode: 404
+    
+        ```
+        {
+            "status": 404,
+            "error": "Not Found",
+            "message": "",
+            "path": "/api/v1/users/1/tips"
+        }
+        ```

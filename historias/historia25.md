@@ -39,36 +39,39 @@ Esta interfaz permitirá al usuario ver una lista de los ejercicios que puede re
 
     Response: Exitoso statusCode: 200
 
-    ```
-    {
-        "count": 3
-        "results": [
-            {
-                "id": 1,
-                "name": "Martillo",
-                "description": "Descripción detallada del ejercicio Martillo...",
-                "category": [ID_CATEGORIA],
-            },
-            {
-                "id": 2,
-                "name": "Unilateral",
-                "description": "Descripción detallada del ejercicio Unilateral...",
-                "category": [ID_CATEGORIA],
-            },
-            {
-                "id": 3,
-                "name": "Prono",
-                "description": "Descripción detallada del ejercicio Prono...",
-                "category": [ID_CATEGORIA],
-            }
-        ]
-    }
-    ```
+        ```
+        {
+            "count": 3
+            "results": [
+                {
+                    "id": 1,
+                    "name": "Martillo",
+                    "description": "Descripción detallada del ejercicio Martillo...",
+                    "category": [ID_CATEGORIA],
+                },
+                {
+                    "id": 2,
+                    "name": "Unilateral",
+                    "description": "Descripción detallada del ejercicio Unilateral...",
+                    "category": [ID_CATEGORIA],
+                },
+                {
+                    "id": 3,
+                    "name": "Prono",
+                    "description": "Descripción detallada del ejercicio Prono...",
+                    "category": [ID_CATEGORIA],
+                }
+            ]
+        }
+        ```
 
-    Response: Error statusCode: 400
+    Response: Error statusCode: 404
 
-    ```
-    {
-        "detail": "No se pudo obtener la lista de ejercicios"
-    }
-    ```
+        ```
+        {
+            "status": 404,
+            "error": Bad Request",
+            "message": "No se encontró la categoría",
+            "path": "/api/v2/exercise/?language=2&category=[ID_CATEGORIA]"
+        }
+        ```

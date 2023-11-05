@@ -8,6 +8,12 @@ Para: poder ver mi información.
 
 - El usuario debe poder ver sus datos personales.
 
+#### Prototipo de baja fidelidad
+
+- Dado: Que el usuario inicio sesión.
+- Cuando: El usuario seleccione la opción de ver perfil.
+- Entonces: El usuario podrá ver sus datos personales.
+
 ## Análisis y diseño
 
 <img src="../assets/historia70.png" alt="Historia de usuario de poder ver tus datos personales" width="500px" ><br/>

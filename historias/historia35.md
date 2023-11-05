@@ -32,31 +32,34 @@ Esta interfaz permitirá al usuario crear una rutina de entrenamiento. Todo con 
 
     Request:
 
-    ```
-    POST http://localhost:8080/api/v1/users/1/rutinas
-    Content-Type: application/json
-    Accept: application/json
-    {
-        "nombreRutina": "Rutina de Fuerza"
-        "descripcion": "Con una barra sobre tus hombros, baja tu cuerpo hasta que tus muslos estén paralelos al suelo y luego regresa a la posición inicial."
-    }
-    ```
+        ```
+        POST http://localhost:8080/api/v1/users/1/rutinas
+        Content-Type: application/json
+        Accept: application/json
+        {
+            "nombreRutina": "Rutina de Fuerza"
+            "descripcion": "Con una barra sobre tus hombros, baja tu cuerpo hasta que tus muslos estén paralelos al suelo y luego regresa a la posición inicial."
+        }
+        ```
 
     Response: Exitoso statusCode: 201
 
-    ```
-    {
-        "rutinaId": 1,
-        "nombreRutina": "Rutina de Fuerza",
-        “fechaCreacion”: “2022-05-05”,
-        "descripcion": "Con una barra sobre tus hombros, baja tu cuerpo hasta que tus muslos estén paralelos al suelo y luego regresa a la posición inicial."
-    }
-    ```
+        ```
+        {
+            "rutinaId": 1,
+            "nombreRutina": "Rutina de Fuerza",
+            “fechaCreacion”: “2022-05-05”,
+            "descripcion": "Con una barra sobre tus hombros, baja tu cuerpo hasta que tus muslos estén paralelos al suelo y luego regresa a la posición inicial."
+        }
+        ```
 
     Response: Error statusCode: 400
 
-    ```
-    {
-        "detail": "No se pudo crear la rutina"
-    }
-    ```
+        ```
+        {
+            "status": 400,
+            "error": "Bad Request",
+            "message": "No se pudo crear la rutina",
+            "path": "/api/v1/users/1/rutinas"
+        }
+        ```

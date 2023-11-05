@@ -66,7 +66,10 @@ Esta interfaz permitirá al usuario agregar un ejercicio a su rutina de entrenam
 
         ```
         {
-            "detail": "No se pudo agregar el ejercicio a la rutina"
+            "status": 400,
+            "error": "Bad Request",
+            "message": "No se pudo agregar el ejercicio a la rutina",
+            "path": "/api/v1/users/1/rutinas/1/ejercicios"
         }
         ```
 
@@ -101,6 +104,9 @@ Esta interfaz permitirá al usuario agregar un ejercicio a su rutina de entrenam
 
         ```
         {
-            "detail": "No se pudo eliminar el ejercicio de la rutina"
+            "status": 400,
+            "error": "Bad Request",
+            "message": "No se pudo eliminar el ejercicio de la rutina",
+            "path": "/api/v1/users/1/rutinas/1/ejercicios/14"
         }
         ```
