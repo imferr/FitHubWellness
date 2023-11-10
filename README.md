@@ -2,7 +2,7 @@
 
 ## Valor
 
-El valor de este proyecto es proporcionar a los usuarios una página web accesible para diseñar rutinas de ejercicios personalizadas. Incluye explicaciones sencillas para realizar correctamente los ejercicios y la opción de incorporar nuevos a medida que se progresa. Además, permite monitorear el avance mediante el IMC, ajustando la rutina conforme a la evolución personal.
+El valor de este proyecto es proporcionar a los usuarios una página web accesible para diseñar rutinas de ejercicios personalizadas. Incluye explicaciones sencillas para realizar correctamente los ejercicios y están divididos por categorias para mejorar la visibilidad de los mismos. Además, permite ver un historial del IMC, ajustando la rutina conforme a la evolución personal.
 
 ## Historias de usuario
 
