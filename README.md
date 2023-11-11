@@ -7,3 +7,4 @@ El proyecto FithubWellness sirve para ayudar a los usuarios a gestionar su condi
 ## Historias de usuario
 
 - Historia de usuario 10: Inicio de sesión.
+- Historia de usuario 20: Página de inicio.
