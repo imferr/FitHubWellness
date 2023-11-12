@@ -2,19 +2,15 @@
 
 ## Valor
 
-El valor de este proyecto es proporcionar a los usuarios una página web accesible para diseñar rutinas de ejercicios personalizadas. Incluye explicaciones sencillas para realizar correctamente los ejercicios y están divididos por categorias para mejorar la visibilidad de los mismos. Además, permite ver un historial del IMC, ajustando la rutina conforme a la evolución personal.
+El proyecto FithubWellness sirve para ayudar a los usuarios a gestionar su condición física a través de una plataforma personalizada que permite el seguimiento de rutinas de ejercicios, establecimiento de objetivos de fitness, y monitorización del progreso personal. Con la ayuda de la API externa de WGER para los ejercicios y su descripción; y con la ayuda de la API externa de ChatGPT para la generación de sugerencias de ejercicios o alimentación en base a las preferencias del usuario en sus objetivos.
 
 ## Historias de usuario
 
-- 10: [Historia de usuario de inicio de sesión](/historias/historia10.md)
-- 20: [Historia de usuario de ver partes del cuerpo para entrenar](/historias/historia20.md)
-- 25: [Historia de usuario de ver ejercicios para cada parte del cuerpo](/historias/historia25.md)
-- 30: [Historia de usuario de ver rutina y ejercicios por rutina](/historias/historia30.md)
-- 35: [Historia de usuario de crear rutina](/historias/historia35.md)
-- 40: [Historia de usuario de agregar ejercicio a rutina](/historias/historia40.md)
-- 45: [Historia de usuario de agregar ejercicio a una nueva rutina](/historias/historia45.md)
-- 50: [Historia de usuario de poder ver tu IMC](/historias/historia50.md)
-- 55: [Historia de usuario de poder ver tips en base a tu IMC](/historias/historia55.md)
-- 60: [Historia de usuario de poder ver tu historial de IMC](/historias/historia60.md)
-- 65: [Historia de usuario de poder agregar nuevo peso y altura](/historias/historia65.md)
-- 70: [Historia de usuario de poder ver tus datos personales](/historias/historia70.md)
+- Historia de usuario 10: Inicio de sesión.
+- Historia de usuario 20: Página de inicio.
+- Historia de usuario 30: Añadir ejercicio a rutina.
+- Historia de usuario 40: Crear nueva evaluación.
+- Historia de usuario 50: Crear nueva rutina.
+- Historia de usuario 60: Poner objetivo de fitness.
+- Historia de usuario 70: Registrar personal record.
+- Historia de usuario 80: Ver historial de evaluaciones.
