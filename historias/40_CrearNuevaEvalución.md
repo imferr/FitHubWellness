@@ -8,6 +8,7 @@
 
 - El sistema debe permitir al usuario registrar una nueva evaluación de su condición física actualizando su peso y altura.
 - Los campos de peso y altura deben ser obligatorios.
+- El sistema debe registrar la fecha de cada evaluación de manera automática.
 
 ## Análisis
 
