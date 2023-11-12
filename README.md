@@ -10,3 +10,4 @@ El proyecto FithubWellness sirve para ayudar a los usuarios a gestionar su condi
 - Historia de usuario 20: Página de inicio.
 - Historia de usuario 30: Añadir ejercicio a rutina.
 - Historia de usuario 40: Crear nueva evaluación.
+- Historia de usuario 50: Crear nueva rutina.
