@@ -80,7 +80,7 @@ Al integrar estas APIs en la aplicación, se debe tener en cuenta:
 
 Con la integración exitosa de estas APIs, los usuarios tendrán acceso a una amplia gama de ejercicios con descripciones detalladas y representaciones visuales, mejorando su experiencia en la planificación y ejecución de sus rutinas de ejercicios.
 
-```
+```json
 {
   "results": [
     {
@@ -123,7 +123,7 @@ La API de ChatGPT ofrece un endpoint para obtener sugerencias de ejercicios o al
 
 Por ejemplo, si el usuario tiene como objetivo la pérdida de peso, y sus métricas son 70 kg de peso y 175 cm de altura, la API de ChatGPT devuelve un JSON con las siguientes sugerencias:
 
-```
+```json
 {
   "user_id": 12345,
   "recommendations": {
